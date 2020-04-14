@@ -20,7 +20,7 @@ import java.util.List;
 
 /**
  * @DescriptionDemo 实现类
- * @Author zhaorujie
+ * @Author lcx
  * @Date 2020-03-28
  */
 @Service
@@ -34,7 +34,7 @@ public class GoodsService {
      * 新增商品
      * @param goodsInfo
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @Transactional(rollbackFor = Exception.class)
@@ -66,7 +66,7 @@ public class GoodsService {
      * 查询商品详情
      * @param goodsId
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     public AppResponse getGoodsInfoById(String goodsId){
@@ -85,7 +85,7 @@ public class GoodsService {
      * 获取商品一二级分类
      * @param classifyId
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     public AppResponse getListGoodsCategory(String classifyId){
@@ -103,7 +103,7 @@ public class GoodsService {
      * 修改商品信息
      * @param goodsInfo
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @Transactional(rollbackFor = Exception.class)
@@ -134,7 +134,7 @@ public class GoodsService {
      * @param goodsStateId
      * @param userId
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @Transactional(rollbackFor = Exception.class)
@@ -153,7 +153,7 @@ public class GoodsService {
      * 查询商品列表（分页）
      * @param goodsInfo
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     public AppResponse getListGoods(GoodsInfo goodsInfo){
@@ -168,7 +168,7 @@ public class GoodsService {
      * @param goodsId
      * @param userId
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @Transactional(rollbackFor = Exception.class)

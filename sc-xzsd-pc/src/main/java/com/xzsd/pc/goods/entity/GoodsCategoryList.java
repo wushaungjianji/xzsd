@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 封装数据实体类
- * @author zhaorujie
+ * @author lcx
  * @date
  */
 public class GoodsCategoryList {

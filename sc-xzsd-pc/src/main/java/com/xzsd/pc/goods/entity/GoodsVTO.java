@@ -2,7 +2,7 @@ package com.xzsd.pc.goods.entity;
 
 /**
  * @Description 商品详情实体类
- * @Author zhaorujie
+ * @Author lcx
  * @Date 2020-03-28
  */
 public class GoodsVTO {

@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * @ClassName GoodsDao
  * @Description Goods
- * @Author zhaorujie
+ * @Author lcx
  * @Date 2020-03-28
  */
 @Mapper

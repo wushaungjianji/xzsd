@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 
 /**
  * @Description增删改查GoodsInfo
- * @Author zhaorujie
+ * @Author lcx
  * @Date 2020-03-28
  */
 @RestController
@@ -30,7 +30,7 @@ public class GoodsController {
      * 新增商品
      * @param goodsInfo
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @PostMapping("addGoods")
@@ -51,7 +51,7 @@ public class GoodsController {
      * 查询商品详情
      * @param goodsId
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @PostMapping("getGoods")
@@ -69,7 +69,7 @@ public class GoodsController {
      * 获取商品分类
      * @param classifyId
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @PostMapping("listGoodsClassify")
@@ -87,7 +87,7 @@ public class GoodsController {
      * 更新商品信息
      * @param goodsInfo
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @PostMapping("updateGoods")
@@ -109,7 +109,7 @@ public class GoodsController {
      * @param goodsId
      * @param goodsStateId
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @PostMapping("updateGoodsShelfState")
@@ -129,7 +129,7 @@ public class GoodsController {
      * 查询商品列表（分页）
      * @param goodsInfo
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @PostMapping("listGoods")
@@ -147,7 +147,7 @@ public class GoodsController {
      * 删除商品
      * @param goodsId
      * @return
-     * @author zhaorujie
+     * @author lcx
      * @Date 2020-03-28
      */
     @PostMapping("deleteGoods")

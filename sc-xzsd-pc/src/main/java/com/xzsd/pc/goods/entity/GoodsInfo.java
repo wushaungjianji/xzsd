@@ -2,7 +2,7 @@ package com.xzsd.pc.goods.entity;
 
 /**
  * @Description 实体类
- * @Author zhaorujie
+ * @Author lcx
  * @Date 2020-03-24
  */
 public class GoodsInfo {
