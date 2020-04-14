@@ -1,45 +1,31 @@
-package com.xzsd.pc.user.entity;
-
-import java.util.Date;
+package com.xzsd.pc.customer.entity;
 
 /**
- * @Description 用户实体类
- * @Author zhaorujie
- * @Date 2020-03-27
+ * @Description 实体类
+ * @Author lcx
+ * @Date 2020-03-26
  */
-public class UserInfo {
+public class CustomerInfo {
     /**
-     * 用户id
-     */
-    private String userId;
-    /**
-     * 用户名称
+     * 客户账号
      */
     private String userName;
     /**
-     * 用户账号
+     * 客户姓名
      */
     private String userAcct;
     /**
-     * 用户密码
-     */
-    private String userPassword;
-    /**
-     * 图片上传返回的路径
-     */
-    private String imagePath;
-    /**
-     * 用户头像
-     */
-    private String userImage;
-    /**
-     * 性别
+     * 客户性别：0：男 1：女
      */
     private String sex;
     /**
-     * 手机
+     * 电话
      */
     private String phone;
+    /**
+     * 邀请码
+     */
+    private String invitationCode;
     /**
      * 邮箱
      */
@@ -48,14 +34,6 @@ public class UserInfo {
      * 身份证
      */
     private String idCard;
-    /**
-     * 角色（0超级管理员，1管理员，2店长，3司机，4用户）
-     */
-    private String role;
-    /**
-     * 邀请码
-     */
-    private String invitationCode;
     /**
      * 页码
      */
@@ -75,7 +53,7 @@ public class UserInfo {
     /**
      * 创建时间
      */
-    private Date createTime;
+    private String createTime;
     /**
      * 更新者
      */
@@ -83,19 +61,15 @@ public class UserInfo {
     /**
      * 更新时间
      */
-    private Date updateTime;
+    private String updateTime;
     /**
      * 版本号
      */
     private String version;
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+    /**
+     * 角色
+     */
+    private String role;
 
     public String getUserName() {
         return userName;
@@ -111,30 +85,6 @@ public class UserInfo {
 
     public void setUserAcct(String userAcct) {
         this.userAcct = userAcct;
-    }
-
-    public String getUserPassword() {
-        return userPassword;
-    }
-
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
-    }
-
-    public String getImagePath() {
-        return imagePath;
-    }
-
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
-    }
-
-    public String getUserImage() {
-        return userImage;
-    }
-
-    public void setUserImage(String userImage) {
-        this.userImage = userImage;
     }
 
     public String getSex() {
@@ -153,6 +103,14 @@ public class UserInfo {
         this.phone = phone;
     }
 
+    public String getInvitationCode() {
+        return invitationCode;
+    }
+
+    public void setInvitationCode(String invitationCode) {
+        this.invitationCode = invitationCode;
+    }
+
     public String getMail() {
         return mail;
     }
@@ -167,22 +125,6 @@ public class UserInfo {
 
     public void setIdCard(String idCard) {
         this.idCard = idCard;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public String getInvitationCode() {
-        return invitationCode;
-    }
-
-    public void setInvitationCode(String invitationCode) {
-        this.invitationCode = invitationCode;
     }
 
     public int getPageSize() {
@@ -217,11 +159,11 @@ public class UserInfo {
         this.createUser = createUser;
     }
 
-    public Date getCreateTime() {
+    public String getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
@@ -233,11 +175,11 @@ public class UserInfo {
         this.updateUser = updateUser;
     }
 
-    public Date getUpdateTime() {
+    public String getUpdateTime() {
         return updateTime;
     }
 
-    public void setUpdateTime(Date updateTime) {
+    public void setUpdateTime(String updateTime) {
         this.updateTime = updateTime;
     }
 
@@ -247,5 +189,13 @@ public class UserInfo {
 
     public void setVersion(String version) {
         this.version = version;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

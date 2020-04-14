@@ -1,13 +1,11 @@
 package com.xzsd.pc.user.entity;
 
-import java.util.Date;
-
 /**
  * @Description 用户实体类
- * @Author zhaorujie
+ * @Author lcx
  * @Date 2020-03-27
  */
-public class UserInfo {
+public class UserVO {
     /**
      * 用户id
      */
@@ -25,10 +23,6 @@ public class UserInfo {
      */
     private String userPassword;
     /**
-     * 图片上传返回的路径
-     */
-    private String imagePath;
-    /**
      * 用户头像
      */
     private String userImage;
@@ -37,7 +31,7 @@ public class UserInfo {
      */
     private String sex;
     /**
-     * 手机
+     * 电话
      */
     private String phone;
     /**
@@ -49,41 +43,9 @@ public class UserInfo {
      */
     private String idCard;
     /**
-     * 角色（0超级管理员，1管理员，2店长，3司机，4用户）
+     * 角色（0管理员，1店长，2司机，3用户）
      */
     private String role;
-    /**
-     * 邀请码
-     */
-    private String invitationCode;
-    /**
-     * 页码
-     */
-    private int pageSize;
-    /**
-     * 页数
-     */
-    private int pageNum;
-    /**
-     * 作废标记 0为存在，1为作废
-     */
-    private int isDelete;
-    /**
-     * 创建者
-     */
-    private String createUser;
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-    /**
-     * 更新者
-     */
-    private String updateUser;
-    /**
-     * 更新时间
-     */
-    private Date updateTime;
     /**
      * 版本号
      */
@@ -119,14 +81,6 @@ public class UserInfo {
 
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
-    }
-
-    public String getImagePath() {
-        return imagePath;
-    }
-
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
     }
 
     public String getUserImage() {
@@ -175,70 +129,6 @@ public class UserInfo {
 
     public void setRole(String role) {
         this.role = role;
-    }
-
-    public String getInvitationCode() {
-        return invitationCode;
-    }
-
-    public void setInvitationCode(String invitationCode) {
-        this.invitationCode = invitationCode;
-    }
-
-    public int getPageSize() {
-        return pageSize;
-    }
-
-    public void setPageSize(int pageSize) {
-        this.pageSize = pageSize;
-    }
-
-    public int getPageNum() {
-        return pageNum;
-    }
-
-    public void setPageNum(int pageNum) {
-        this.pageNum = pageNum;
-    }
-
-    public int getIsDelete() {
-        return isDelete;
-    }
-
-    public void setIsDelete(int isDelete) {
-        this.isDelete = isDelete;
-    }
-
-    public String getCreateUser() {
-        return createUser;
-    }
-
-    public void setCreateUser(String createUser) {
-        this.createUser = createUser;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public String getUpdateUser() {
-        return updateUser;
-    }
-
-    public void setUpdateUser(String updateUser) {
-        this.updateUser = updateUser;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
     }
 
     public String getVersion() {

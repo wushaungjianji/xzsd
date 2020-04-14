@@ -1,61 +1,65 @@
-package com.xzsd.pc.user.entity;
+package com.xzsd.pc.order.entity;
 
 import java.util.Date;
 
 /**
- * @Description 用户实体类
- * @Author zhaorujie
+ * @Description 实体类
+ * @Author lcx
  * @Date 2020-03-27
  */
-public class UserInfo {
+public class OrderInfo {
     /**
-     * 用户id
+     * 订单id
      */
-    private String userId;
+    private String orderId;
     /**
-     * 用户名称
+     * 下单人姓名
      */
     private String userName;
     /**
-     * 用户账号
+     * 下单人id
      */
-    private String userAcct;
+    private String userId;
     /**
-     * 用户密码
+     * 登录者Id
      */
-    private String userPassword;
+    private String loginUserId;
     /**
-     * 图片上传返回的路径
+     * 支付时间起
      */
-    private String imagePath;
+    private String payTimeStart;
     /**
-     * 用户头像
+     * 支付时间止
      */
-    private String userImage;
+    private String payTimeEnd;
     /**
-     * 性别
-     */
-    private String sex;
-    /**
-     * 手机
+     * 下单人电话
      */
     private String phone;
     /**
-     * 邮箱
+     * 订单状态(0已下单， 1待取货， 2已取货， 3已完成未评价， 4已完成已评价， 5已取消)
      */
-    private String mail;
+    private String orderStateId;
     /**
-     * 身份证
-     */
-    private String idCard;
-    /**
-     * 角色（0超级管理员，1管理员，2店长，3司机，4用户）
+     * 角色编号（当前登录的角色）
      */
     private String role;
     /**
-     * 邀请码
+     * 订单总价
      */
-    private String invitationCode;
+    private String orderAllCost;
+    /**
+     * 支付状态
+     */
+    private String defrayStatus;
+    /**
+     * 门店编码
+     */
+    private String storeId;
+    /**
+     * 支付时间
+     */
+    private String payTime;
     /**
      * 页码
      */
@@ -89,12 +93,12 @@ public class UserInfo {
      */
     private String version;
 
-    public String getUserId() {
-        return userId;
+    public String getOrderId() {
+        return orderId;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 
     public String getUserName() {
@@ -105,44 +109,36 @@ public class UserInfo {
         this.userName = userName;
     }
 
-    public String getUserAcct() {
-        return userAcct;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUserAcct(String userAcct) {
-        this.userAcct = userAcct;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public String getUserPassword() {
-        return userPassword;
+    public String getLoginUserId() {
+        return loginUserId;
     }
 
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
+    public void setLoginUserId(String loginUserId) {
+        this.loginUserId = loginUserId;
     }
 
-    public String getImagePath() {
-        return imagePath;
+    public String getPayTimeStart() {
+        return payTimeStart;
     }
 
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
+    public void setPayTimeStart(String payTimeStart) {
+        this.payTimeStart = payTimeStart;
     }
 
-    public String getUserImage() {
-        return userImage;
+    public String getPayTimeEnd() {
+        return payTimeEnd;
     }
 
-    public void setUserImage(String userImage) {
-        this.userImage = userImage;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setPayTimeEnd(String payTimeEnd) {
+        this.payTimeEnd = payTimeEnd;
     }
 
     public String getPhone() {
@@ -153,20 +149,12 @@ public class UserInfo {
         this.phone = phone;
     }
 
-    public String getMail() {
-        return mail;
+    public String getOrderStateId() {
+        return orderStateId;
     }
 
-    public void setMail(String mail) {
-        this.mail = mail;
-    }
-
-    public String getIdCard() {
-        return idCard;
-    }
-
-    public void setIdCard(String idCard) {
-        this.idCard = idCard;
+    public void setOrderStateId(String orderStateId) {
+        this.orderStateId = orderStateId;
     }
 
     public String getRole() {
@@ -177,12 +165,36 @@ public class UserInfo {
         this.role = role;
     }
 
-    public String getInvitationCode() {
-        return invitationCode;
+    public String getOrderAllCost() {
+        return orderAllCost;
     }
 
-    public void setInvitationCode(String invitationCode) {
-        this.invitationCode = invitationCode;
+    public void setOrderAllCost(String orderAllCost) {
+        this.orderAllCost = orderAllCost;
+    }
+
+    public String getDefrayStatus() {
+        return defrayStatus;
+    }
+
+    public void setDefrayStatus(String defrayStatus) {
+        this.defrayStatus = defrayStatus;
+    }
+
+    public String getStoreId() {
+        return storeId;
+    }
+
+    public void setStoreId(String storeId) {
+        this.storeId = storeId;
+    }
+
+    public String getPayTime() {
+        return payTime;
+    }
+
+    public void setPayTime(String payTime) {
+        this.payTime = payTime;
     }
 
     public int getPageSize() {

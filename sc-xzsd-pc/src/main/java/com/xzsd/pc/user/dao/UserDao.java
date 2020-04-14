@@ -1,6 +1,7 @@
 package com.xzsd.pc.user.dao;
 
 import com.xzsd.pc.user.entity.UserInfo;
+import com.xzsd.pc.user.entity.UserVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -8,48 +9,68 @@ import java.util.List;
 
 @Mapper
 public interface UserDao {
+
     /**
-     * 新增用户
-     * @param
+     * 获取登录者角色
+     * @param loginUserId
      * @return
      */
-    int saveUser(UserInfo userinfo);
-    /**
-     * 查询用户
-     */
-    UserInfo getUserByUserCode(String userId);
-
-
+    String getUserRole(@Param("loginUserId") String loginUserId);
 
     /**
-     * 统计用户账号数量
-     * @param userInfo 用户信息
+     * 查询是否出现重复的邀请码
+     * @param invitationCode
      * @return
      */
-    int countUserPassword(UserInfo userInfo);
+    //int countInvitationCode(@Param("invitationCode") String invitationCode);
 
     /**
-     * 获取所有用户信息
-     * @param userInfo 用户信息
-     * @return 所有用户信息
-     */
-    List<UserInfo> listUsersByPage(UserInfo userInfo);
-
-
-
-
-
-
-
-
-
-
-    /**
-     * 修改用户
-     * @param
+     * 统计用户账号
+     * @param userInfo
      * @return
      */
-    int updateUser(UserInfo userInfo);
+    int countUserAccount(UserInfo userInfo);
 
-    int deleteUser(@Param("listCode") List<String> listCode, @Param("userCode") String userName);
+    /**
+     * 统计手机号
+     * @param userInfo
+     * @return
+     */
+    int countPhone(UserInfo userInfo);
+
+    /**
+     * 添加用户
+     * @param userInfo
+     * @return
+     */
+    int addUser(UserInfo userInfo);
+
+    /**
+     * 查询用户详情
+     * @param userId
+     * @return
+     */
+    UserVO getUserInfoById(@Param("userId") String userId);
+
+    /**
+     * 更新用户信息
+     * @param userInfo
+     * @return
+     */
+    int updateUserInfo(UserInfo userInfo);
+
+    /**
+     * 查询用户列表（分页）
+     * @param userInfo
+     * @return
+     */
+    List<UserVO> getListUser(UserInfo userInfo);
+
+    /**
+     * 删除用户
+     * @param listUserId
+     * @param loginUserId
+     * @return
+     */
+    int deleteUser(@Param("listUserId") List<String> listUserId, @Param("loginUserId") String loginUserId);
 }
